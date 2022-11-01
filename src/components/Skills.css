@@ -1,0 +1,183 @@
+:root {
+  --theme-color: rgb(56, 18, 226);
+  --react: 100;
+  --redux: 90;
+  --html: 100;
+  --css: 95;
+  --cpp: 100;
+  --c: 90;
+  --java: 95;
+  --php: 80;
+  --javascript: 95;
+  --spring: 90;
+  --matlab: 90;
+}
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.skill-bx {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.skill p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.skill-slider .item * {
+  /* width: 50%; */
+  margin: 0 auto 0px auto;
+  /* color: #2a2a2a; */
+  align-items: center;
+  /* border: 1px white solid; */
+}
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+.item * {
+  /* display: inline-block; */
+  /* display: flex; */
+  width: 165px;
+  align-items: center;
+}
+.item svg {
+  position: relative;
+  /* width: 100%; */
+  /* height: 100%; */
+  transform: rotate(270deg);
+  width: 100%;
+  margin-right: 0;
+}
+.item svg circle {
+  /* width: 100%; */
+  /* height: 100%; */
+  fill: transparent;
+  stroke-width: 2;
+  stroke: black;
+  transform: translate(5%, 5%);
+}
+
+/* for all skills */
+.react svg circle:nth-child(2) {
+  stroke: var(--theme-color);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--react)) / 100);
+}
+.redux svg circle:nth-child(2) {
+  stroke: var(--theme-color);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--redux)) / 100);
+}
+.html svg circle:nth-child(2) {
+  stroke: var(--theme-color);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--html)) / 100);
+}
+.css svg circle:nth-child(2) {
+  stroke: var(--theme-color);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--css)) / 100);
+}
+.javascript svg circle:nth-child(2) {
+  stroke: var(--theme-color);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--javascript)) / 100);
+}
+.cpp svg circle:nth-child(2) {
+  stroke: var(--theme-color);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--cpp)) / 100);
+}
+.c svg circle:nth-child(2) {
+  stroke: var(--theme-color);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--c)) / 100);
+}
+.spring svg circle:nth-child(2) {
+  stroke: var(--theme-color);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--spring)) / 100);
+}
+.java svg circle:nth-child(2) {
+  stroke: var(--theme-color);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--java)) / 100);
+}
+.php svg circle:nth-child(2) {
+  stroke: var(--theme-color);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--php)) / 100);
+}
+.matlab svg circle:nth-child(2) {
+  stroke: var(--theme-color);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--matlab)) / 100);
+}
+/* progress bar for all skills over */
+
+svg circle {
+  padding: 0px;
+  margin: 0px;
+}
+.dot {
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  inset: 5px;
+  z-index: 10;
+  /* transform: rotate(calc(3.6deg * var(--redux) + 90deg)); transform: rotate(calc(3.6deg * var(--redux) + 90deg)); */
+}
+.react .dot{ transform: rotate(calc(3.6deg * var(--react) + 90deg)); transform: rotate(calc(3.6deg * var(--react) + 90deg)); }
+.redux .dot{ transform: rotate(calc(3.6deg * var(--redux) + 90deg)); transform: rotate(calc(3.6deg * var(--redux) + 90deg)); }
+.html .dot{ transform: rotate(calc(3.6deg * var(--html) + 90deg)); transform: rotate(calc(3.6deg * var(--html) + 90deg)); }
+.css .dot{ transform: rotate(calc(3.6deg * var(--css) + 90deg)); transform: rotate(calc(3.6deg * var(--css) + 90deg)); }
+.cpp .dot{ transform: rotate(calc(3.6deg * var(--cpp) + 90deg)); transform: rotate(calc(3.6deg * var(--cpp) + 90deg)); }
+.c .dot{ transform: rotate(calc(3.6deg * var(--c) + 90deg)); transform: rotate(calc(3.6deg * var(--c) + 90deg)); }
+.java .dot{ transform: rotate(calc(3.6deg * var(--java) + 90deg)); transform: rotate(calc(3.6deg * var(--java) + 90deg)); }
+.php .dot{ transform: rotate(calc(3.6deg * var(--php) + 90deg)); transform: rotate(calc(3.6deg * var(--php) + 90deg)); }
+.javascript .dot{ transform: rotate(calc(3.6deg * var(--javascript) + 90deg)); transform: rotate(calc(3.6deg * var(--javascript) + 90deg)); }
+.spring .dot{ transform: rotate(calc(3.6deg * var(--spring) + 90deg)); transform: rotate(calc(3.6deg * var(--spring) + 90deg)); }
+.matlab .dot{ transform: rotate(calc(3.6deg * var(--matlab) + 90deg)); transform: rotate(calc(3.6deg * var(--matlab) + 90deg)); }
+
+
+
+
+
+.dot::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--theme-color);
+  top: 0;
+  left: 0;
+  transform: translate(0%, 600%);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--theme-color), 0 0 30px var(--theme-color);
+}
+.number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-48%,-50%);
+}
+.debug { border: 1px white solid; }

@@ -1,0 +1,12 @@
+.github-link {
+  text-decoration: none;
+  
+  color: #5b30b1;
+}
+.github-link:hover {
+  color: #9d3585;
+}
+.no-click {
+  cursor: pointer;
+  user-select: none;
+}
